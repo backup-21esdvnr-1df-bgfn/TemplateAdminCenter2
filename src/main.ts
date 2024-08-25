@@ -29,13 +29,13 @@ WA.onInit().then(() => {
 WA.room.onEnterLayer("floor").subscribe(() => {
     WA.room.hideLayer("roof");
     WA.room.hideLayer("walls-bg-front");
-    WA.room.hideLayer("signs");
+    WA.room.hideLayer("sign");
   });
   
 WA.room.onLeaveLayer("floor").subscribe(() => {
     WA.room.showLayer("roof");
     WA.room.showLayer("walls-bg-front");
-    WA.room.showLayer("signs");
+    WA.room.showLayer("sign");
   });
   WA.room.onEnterLayer("rooms_floor").subscribe(() => {
     WA.room.hideLayer("facade");
